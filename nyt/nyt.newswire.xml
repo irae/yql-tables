@@ -17,6 +17,7 @@
 			</paging>
 			<inputs>
 				<key id="time-period" type="xs:string" paramType="path" />
+				<key id="item_type" type="xs:string" paramType="query" />
 				<key id="version" type="xs:string" paramType="path" default="v3"/>
 				<key id="apikey" type="xs:string" paramType="path" required="true"/>
 	  		</inputs>
