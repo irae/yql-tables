@@ -8,7 +8,8 @@
   <bindings>
 	<select produces="XML" itemPath="result_set.results.news_item">
 	  <urls>
-		<url>http://api.nytimes.com/svc/news/{version}/all/{time-period}.xml?api-key={apikey}</url>
+		
+<url>http://api.nytimes.com/svc/news/{version}/content/source/all.xml?api-key={apikey}</url>
 	  </urls>
 	  <paging model="offset">
 		<start default="0" id="offset"/>
@@ -16,8 +17,8 @@
 		<total default="20"/>
 	  </paging>
 	  <inputs>
-		<key id="time-period" type="xs:string" paramType="path" required="true"/>
-		<key id="version" type="xs:string" paramType="path" default="v2"/>
+		<key id="time-period" type="xs:string" paramType="path" />
+		<key id="version" type="xs:string" paramType="path" default="v3"/>
 		<key id="apikey" type="xs:string" paramType="path" required="true"/>
 	  </inputs>
 	</select>
